@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio João Vinicius</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--LINK FONTS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--LINK SWIPERJS CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+    
+
+</head>
+<body>
+
+    <style>
+    @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+
+        }
+      }
+
+      .items-icons-about {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+      }
+      .decoration-about-p{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .text-about-p{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+      .image-about{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+
+
+
+    </style>
+
+    <header id="header" class="header">
+        <nav>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about-content">Sobre</a></li>
+                <li><a href="#container-services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="home" class="banner-home">
+
+            <!-- particles.js container --> 
+            <div id="particles-js"></div> 
+            <!-- stats - count particles --> 
+
+        <div class="home-content">
+            <h1>Olá, me chamo<br> <span>João Vinicius</span></h1>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas no IFSC Câmpus Tubarão,
+                 aonde venho expandindo meu conhecimento e me apaixonando pelo ramo da tecnologia. 
+            </p>
+            <a href="#container-services" class="btn">Conheça meu trabalho</a>
+           
+            <a href="#about-content"> <i id="arrow-more" class="fa-solid fa-arrow-down"></i></a>
+        </div>
+
+    
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-bueno-8aa8a6273/"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://github.com/VBuenoR"> <i class="fa-brands fa-github"></i> </a>
+        </div>
+        
+      
+    </div>
+
+    
+
+    <div class="about">
+        <div id="about-content">
+            <img class="image-about" src="img/foto-de-perfil.jpeg" alt="">
+            <div class="text-about">
+                <p class="decoration-about-p">Sobre Mim</p> 
+                <p class="text-about-p">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas no IFSC Câmpus Tubarão,
+                 aonde venho expandindo meu conhecimento e me apaixonando pelo ramo da tecnologia. 
+                 Tive minha primeira oportunidade na área pela Mitweb Agência Digital, aonde minha 
+                 eficiência e conhecimento na área aumentou, e estou em busca de me aprimorar e 
+                 conhecer novas oportunidades aonde eu possa contribuir. Acredito que posso contribuir 
+                 com a empresa através do atendimento e suporte ao cliente, já que em minha experiencia 
+                 anterior atuei muito nisso.
+                </p>
+                <div class="icons-about">
+                    <div class="items-icons-about">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="items-icons-about">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="items-icons-about">
+                        <i class="fa-brands fa-react"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="items-icons-about">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+    
+    <div id="services" class="container-division-wave-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#333" fill-opacity="1" d="M0,0L48,21.3C96,43,192,85,288,122.7C384,160,480,192,576,202.7C672,213,768,203,864,186.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    </div>
+  
+    
+    <div id="container-services" class="container-services swiper">
+        <h2 id="tittle-services">Meus Serviços</h2>
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="img/developer.jpg" alt="Card Imagem" class="card-image">
+                        <p class="badge developer"> Developer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adi
+                            isicing elit. Quam ducimus architecto, doloribus</h2>
+                            
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="img/designer.jpg" alt="Card Imagem" class="card-image">
+                        <p class="badge designer"> Designer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adi
+                            isicing elit. Quam ducimus architecto, doloribus</h2>
+                            
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="img/editor.jpg" alt="Card Imagem" class="card-image">
+                        <p class="badge editor"> Editor</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adi
+                            isicing elit. Quam ducimus architecto, doloribus</h2>
+                            
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="img/gamer.jpg" alt="Card Imagem" class="card-image">
+                        <p class="badge gamer"> Gamer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adi
+                            isicing elit. Quam ducimus architecto, doloribus</h2>
+                            
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="img/marketer.jpg" alt="Card Imagem" class="card-image">
+                        <p class="badge marketer"> Marketer</p>
+                        <h2 class="card-title">Lorem ipsum dolor sit amet consectetur adi
+                            isicing elit. Quam ducimus architecto, doloribus</h2>
+                            
+                        <button class="card-button material-symbols-rounded">arrow_forward</button>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+         
+            
+            
+        </div>
+    </div>
+
+    <div class="container-division-wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#333" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,117.3C672,107
+            ,768,117,864,154.7C960,192,1056,256,1152,282.7C1248,309,1344,299,1392,293.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152
+            ,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    </div>
+    
+    <div id="contact" class="contact">
+
+        <div class="contact-content">
+            <div class="form-container">
+            
+                <form action="https://formsubmit.co/joaovrb2004@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+
+                  <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                  </div>
+                  
+                  <div class="form-group">
+                    <button type="submit">Enviar</button>
+                  </div>
+                </form>
+              </div>
+    
+            <div class="container-links">
+                <div class="links">
+                    <ul class="links-ul">
+                        <li><h3 style="font-weight: 400;">Links</h3></li>
+                        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-bueno-8aa8a6273/">linkedin</a></li>
+                        <li><a href="https://github.com/VBuenoR">Github</a></li>
+                        <li><a href="https://www.sharkcodejr.com.br/">SharkCode</a></li>
+                    </ul>
+                    
+                </div>
+        
+                <div class="pages">
+                    <ul class="pages-ul">
+                        <li><h3 style="font-weight: 400;">Sessões</h3></li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about-content">Sobre</a></li>
+                        <li><a href="#container-services">Serviços</a></li>
+                        <li><a href="contact">Contato</a></li>
+                    </ul>
+        
+                </div>
+    
+            </div>
+    
+
+        </div>
+    
+        
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            Desenvolvido por <a href="http://127.0.0.1:5500/index.html" target="_blank">João Vinícius</a> &copy; 2025
+        </div>
+    </div>
+    
+
+    <script src="mobile-navbar.js"></script>  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="script.js"></script>  
+
+</body>
+</html>
